@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RoLLinFood</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="afterAll()">
+    <nav>
+        rooLLi
+    </nav>
+    <br>
+    <div class="row">
+      <div class="col-5">
+      </div>
+      <div class="col-18">
+          <form method="get" action="index.html">
+          <input class="entry" type="submit" value="MANZANA">
+        </form>
+      </div>
+      <div class="col-18">
+        <form method="get" action="index2.html">
+          <input class="entry" type="submit" value="HAMBURGUESA">
+        </form>
+      </div>
+      <div class="col-18">
+        <form method="get" action="index3.html">
+          <input class="entry" type="submit" value="NARANJA">
+        </form>
+      </div>
+      <div class="col-18">
+        <form method="get" action="index4.html">
+          <input class="entry" type="submit" value="PIZZA">
+        </form>
+      </div>
+      <div class="col-18">
+        <form method="get" action="index5.html">
+          <input class="entry" type="submit" value="HELADO">
+        </form>
+      </div>
+      <div class="col-5">
+      </div>
+    </div>
+
+
+    <br>
+    <div class="row">
+            <div id="imgAll">
+                <img src="pizza.png" id="foodImg" alt="The fruit">
+                <canvas id="myCanvas"></canvas>
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col-5">
+            </div>
+    
+            <div class="col-18">
+                <h4>
+                    <p id="c1">~ 043 g</p>
+                </h4>
+            </div>
+
+            <div class="col-18">
+                <h4>
+                    <p id="c2">~ 012 g</p>
+                </h4>
+            </div>
+
+            <div class="col-18">
+                <h4>
+                    <p id="c3">~ 011 g</p>
+                </h4>
+            </div>
+
+            <div class="col-18">
+                <h4>
+                    <p id="c4">< 002 g</p>
+                </h4>
+            </div>
+
+            <div class="col-18">
+                <h4>
+                    <p id="c5">< 004 g</p>
+                </h4>
+            </div>
+
+            <div class="col-5">
+            </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-5">
+            </div>
+            <div class="col-60">
+                <strong><p id="c1">H2O</p></strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+            </div>
+            <div class="col-17">
+                <strong><p id="c2">Proteína</p></strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+            </div>
+            <div class="col-15">
+                <strong><p id="c3">Grasa</p></strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+            </div>
+            <div class="col-3">
+                <strong><p id="c4">Fibra</p></strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+            </div>
+            <div class="col-6">
+                <strong><p id="c5">Azúcar</p></strong>
+            </div>
+        </div>
+    </footer>
+
+    <script src="animation.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBIfNzPSIOD3XGo3p2KzuXYcXmOQ7dsBfs",
+    authDomain: "rolli-c51f8.firebaseapp.com",
+    databaseURL: "https://rolli-c51f8.firebaseio.com",
+    projectId: "rolli-c51f8",
+    storageBucket: "rolli-c51f8.appspot.com",
+    messagingSenderId: "581388412131"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+
+</html>
