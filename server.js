@@ -1,21 +1,23 @@
 
 var http = require('http');
+const path = require('path');
 var url = require('url');
 var fs = require('fs');
+const express = require('express');
+const app = express();
+const server = http.createServer(app);
 
-http.createServer(function (req, res) {
-  var q = url.parse(req.url, true);
-  var filename = "." + q.pathname;
-  if (filename == './')
-    filename = './index.html';
+const parseArgs = require('minimist');
+const args = parseArgs(process.argv.slice(2));
+const { name = 'default', port = '8080' } = args;
 
-  fs.readFile(filename, function(err, data) {
+app.use(express.static(path.join(__dirname, 'public')));
+
+server.listen(+port, '0.0.0.0', (err) => {
     if (err) {
-      res.writeHead(404, {'Content-Type': {'.html': 'text/html'}});
-      return res.end("404 Not Found");
-    };
-    res.writeHead(200, {'Content-Type':  {'.html': 'text/html', '.js': 'text/javascript', '.css':'text/css'}});
-    res.write(data);
-    return res.end();
-  });
-}).listen(8080);
+        console.log(err.stack);
+        return;
+    }
+
+    console.log(`Node [$(name)] listens on http://127.0.0.1:$(port).`);
+});
