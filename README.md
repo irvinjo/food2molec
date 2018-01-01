@@ -1,3 +1,3 @@
 # food2molec
 
-https://rolli-c51f8-c6aa8.firebaseapp.com/
+https://food2molec.tk
