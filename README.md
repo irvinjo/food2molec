@@ -1,7 +1,7 @@
 # food2molec
 
 ****
-https://food2molec.tk
+https://food2molec.ga
 
 ****
 
