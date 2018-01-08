@@ -3,7 +3,6 @@
 Let's convert food to its molecules!
 
 :)
-
-Web: 
+ 
 ****
-https://food2molec.ml
+Web: https://food2molec.ml
