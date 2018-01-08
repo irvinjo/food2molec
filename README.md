@@ -1,5 +1,9 @@
 # food2molec
 
-Let's convert food to its molecules.
+Let's convert food to its molecules!
 
-Web page: ****https://food2molec.ml
+:)
+
+Web: 
+****
+https://food2molec.ml
