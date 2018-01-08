@@ -1,13 +1,5 @@
 # food2molec
 
-****
-https://food2molec.ga
+Let's convert food to its molecules.
 
-****
-****
-qwerty
-qwerty
-qwerty
-qwerty
-qwerty
-qwerty
+Web page: ****https://food2molec.ml
